@@ -72,7 +72,7 @@ function createCard(articleHeadline, authorImg, nameOfAuthor) {
     imgContainer.classList.add('img-container');
 
     headline.textContent = articleHeadline;
-    author.textContent = nameOfAuthor;
+    byauthor.textContent = nameOfAuthor;
     authorImage.src = authorImg;
     console.log(authorImg);
 
