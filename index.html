@@ -10,6 +10,7 @@
   <script src="./components/Tabs/index.js" async></script>
   <script src="./components/Header/index.js" async></script>
   <script src="./components/Cards/index.js" async></script>
+  <script src="./components/Carousel/Carousel.js" async></script>
   <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
 </head>
 
@@ -43,7 +44,29 @@
 
   <!-- STRETCH GOAL: ONLY ATTEMPT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <div class="carousel-container">
+  <!-- <div class="carousel-container">
+  </div> -->
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <p class="slide">STRETCH PROBLEM<br><br>Click the arrows to see how it works!</p>
+    </div>        
+
+    <div class="mySlides"> <!-- This div appears third -->
+      <p class="slide">STRETCH</p>
+    </div>
+    <div class="mySlides"> <!-- This div appears first -->
+      <p class="slide">STRETCH PROBLEM</p>
+    </div>
+    <div class="mySlides"> <!-- This div appears second -->
+      <p class="slide">STRETCH PROBLEM!</p> 
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
   <!-- CARDS CONTAINER, PLACE ARTICLE CARDS HERE -->
