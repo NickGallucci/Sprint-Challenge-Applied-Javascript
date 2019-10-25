@@ -8,5 +8,56 @@
 //    <span class="temp">98°</span>
 //  </div >
 // And add it to the DOM in the .headerContainer component
+// const newHeader = document.querySelector('.header-container');
+// newHeader.appendChild(createHeader());
 
-function Header() {}
+// function createHeader() {
+//     const header = document.createElement('div');
+//     const date = document.createElement('span');
+//     const h1 = document.createElement('h1');
+//     const temp = document.createElement('span');
+    
+//     header.classList.add('header');
+//     date.classList.add('date');
+//     temp.classList.add('temp');
+
+//     date.textContent('SMARCH 28, 2019');
+//     h1.textContent('Lambda Times');
+//     temp.textContent('98 degrees');
+//     // date.textConent = ('SMARCH 28, 2019');
+//     // h1.textConent = ('Lambda Times');
+//     // temp.textConent = 'SMARCH 28, 2019';
+
+//     // header-container.appendChild(header);
+//     header.appendChild(date);
+//     header.appendChild(h1);
+//     header.appendChild(temp);
+
+//     return header;
+// }
+
+const head = document.querySelector('.header-container');
+
+head.appendChild(Header());
+
+function Header() {
+
+    const headX = document.createElement('div');
+    headX.classList.add('header');
+  
+    const dateX = document.createElement('span');
+    dateX.classList.add('date');
+    headX.appendChild(dateX);
+    dateX.textContent = "SMARCH 28, 2019";
+  
+    const titleX = document.createElement('h1');
+    headX.appendChild(titleX);
+    titleX.textContent = 'Lambda Times'
+   
+    const tempX = document.createElement('span');
+    tempX.classList.add('temp');
+    headX.appendChild(tempX);
+    tempX.textContent = '98°';
+  
+    return headX;
+}

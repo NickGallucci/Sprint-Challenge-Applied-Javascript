@@ -39,3 +39,78 @@
     display: none;
   }
 }
+.slideshow-container {
+	position: relative;
+	background: #6ce0d3;
+	background-color: #6ce0d3;
+	/* border-radius: 100px; */
+  }
+  
+  .mySlides {
+	display: none;
+	padding: 80px;
+	text-align: center;
+  }
+
+  .mySlides2 {
+	display: block;
+	padding: 80px;
+	text-align: center;
+  }
+  
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: White;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: black;
+	border-radius: 10px;
+  }
+  
+  .next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+  }
+
+  .cards {
+	width: 100%;
+  }
+
+  .dot-container {
+	text-align: center;
+	padding: 20px;
+	background: #6ce0d3;
+  }
+
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+
+  .slide {
+	  font-size: 5rem;
+	  margin: 20px;
+  }
